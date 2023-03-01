@@ -1,0 +1,20 @@
+%BIsection
+% Definir la función f
+f = @(x) x^3 - 2*x - 5;
+
+% Definir los puntos iniciales del intervalo
+a = 2;
+b = 3;
+
+% Definir la tolerancia y el número máximo de iteraciones
+tol = 0.001;
+max_iter = 50;
+
+% Llamar a la función bisection_table
+%Sbisection_table(f, a, b, tol, max_iter);
+
+
+%false position mismos valores
+false_position_table(f,a,b,tol,max_iter)
+
+%punto fijo 
