@@ -4,8 +4,12 @@ b=x0+h;
 epsilon = rand(1) *(b-a)+a;
 error= (h^2/6)* f3x(epsilon);
 
-derivada = 1/(2*h)*(f(x0+h)-f(x0-h))-error;
+fxh=round(f(x0+h),5);
 
+fxh2=round(f(x0-h),5);
 
+derivada = 1/(2*h)*(fxh-fxh2);
+
+derivada = round(derivada,5);
 end
 
